@@ -15,7 +15,7 @@ use Mpdf\MpdfException;
 use PHPUnit\Framework\TestCase;
 use AbcAeffchen\SepaDocumentor\ControlList;
 
-class TestControlList extends TestCase
+class TestControlList extends PHPUnit_Framework_TestCase
 {
 
     protected $dataWithBIC;
@@ -24,7 +24,7 @@ class TestControlList extends TestCase
     protected $expectedOutputWithBIC;
     protected $expectedOutputWithoutBIC;
 
-    protected function setUp() : void
+    protected function setUp()
     {
         $this->dataWithBIC = ['file_name'              => 'fileName',
                               'message_id'             => 'some message id',

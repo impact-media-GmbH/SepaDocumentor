@@ -15,7 +15,7 @@ use Mpdf\MpdfException;
 use PHPUnit\Framework\TestCase;
 use AbcAeffchen\SepaDocumentor\FileRoutingSlip;
 
-class TestFileRoutingSlip extends TestCase
+class TestFileRoutingSlip extends PHPUnit_Framework_TestCase
 {
 
     protected $dataWithBIC;
@@ -23,7 +23,7 @@ class TestFileRoutingSlip extends TestCase
     protected $expectedOutputWithBIC;
     protected $expectedOutputWithoutBIC;
 
-    protected function setUp() : void
+    protected function setUp()
     {
         $this->dataWithBIC = ['file_name'              => 'fileName',
                               'scheme_version'         => 'pain.001.002.03',
